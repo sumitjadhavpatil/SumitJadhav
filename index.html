@@ -1,12 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <style>
+  *{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    
+    
+  }
+  body{
+  height:100vh;
+width:100vw;    
+  
+  }
+  .container{
+  /*  background-size:contain;*/
+    background-image:url("/storage/emulated/0/Pictures/desktop-wallpaper-for-black-space-stars-background-data-solar-system-at-night.jpg");
+   height:100%;
+width:100%;    
+    background-color:black;
+  display:flex; 
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+  .system{
+    
+  height:100px;
+width:100px;
+ /*   background-color:#abc;   */
+   display:flex; 
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+  .sun{
+  height:50px;
+width:50px;
+border-radius:50%;
+   background-color:yellow; 
+    position:absolute;
+      
+  }
+  
+  .mars{
+    z-index:1;
+    height:20px;
+width:20px;
+border-radius:50%;
+   background-color:orange;
+    position:absolute;
+     animation-name:mar;
+    animation-duration:40s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+  }
+  
+  
+  @keyframes mar{
+    
+   from{
+     transform:rotate(0deg) translate(200px);
+     
+   }
+    
+to{
+  
+  transform:rotate(360deg) translate(200px);
+     
+}  
+    
+  }
+   .earth{
+     
+     height:20px;
+width:20px;
+border-radius:50%;
+   background-color:blue;
+    position:absolute;
+     animation-name:ear;
+    animation-duration:60s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+
+     
+   }     
+  
+  @keyframes ear{
+    
+   from{
+     transform:rotate(0deg) translate(250px);
+     
+   }
+    
+to{
+  
+  transform:rotate(360deg) translate(250px);
+     
+}
+    
+  }    
+    
+    .earthorbit{
+       height:390px;
+width:390px;
+border-radius:50%;
+      border:.9px dashed #abc;
+   background-color:none;
+    position:absolute;
+     animation-name:ok;
+    animation-duration:60s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+
+    }
+  
+  .jupiter{
+    
+    height:30px;
+width:30px;
+border-radius:50%;
+   background-color:brown;
+    position:absolute;
+     animation-name:jup;
+    animation-duration:60s;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    
+    
+  }
+  
+   @keyframes jup{
+    
+   from{
+     transform:rotate(0deg) translate(300px);
+     
+   }
+    
+to{
+  
+  transform:rotate(360deg) translate(300px);
+     
+}
+    
+  }  
+  
+  .marsorbit{
+    height:500px;
+width:500px;
+border-radius:50%;
+      border:.9px dashed #abc;
+   background-color:none;
+    position:absolute;
+    
+    
+    
+    
+  }
+.jupiter{
+  
+  
+  
+  
+  
+  
+}  
+  </style>
 </head>
 <body>
-    <h1>Coder Army</h1>
-    <h2>This is JADHAV SUMIT GANESH</h2>
+<div class="container">
+    <div class="system">
+      
+      
+           <div class="sun"> </div>      
+      
+           <div class="mars"></div>
+      <div class="earthorbit"></div>
+   
+            <div class="earth"></div>
+           <div class="marsorbit"></div>
+      <div class="jupiter"></div>
+     </div>
+    
+</div>
+  
+
 </body>
 </html>
